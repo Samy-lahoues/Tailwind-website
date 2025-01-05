@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <!-- Import Tailwind css framework -->
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- import fontawesome library -->
+    <link rel="stylesheet" href="dist/all.min.css">
+    <!-- render all elements normaly -->
+    <link rel="stylesheet" href="dist/normalize.css">
+</head>
+<body>
+    <header class="bg-white">
+        <div class="container mx-auto px-5 flex h-24 items-center justify-between">
+            <div class="logo">
+                <img class="w-48" src="images/logo-light.png" alt="logo-img">
+            </div>
+            <nav class="flex justify-between items-center w-96 text-base">
+                    <a class="transition hover:text-orange-500" href="#profile">Profile</a></li>
+                    <a class="transition hover:text-orange-500" href="#about">About</a>
+                    <a class="transition hover:text-orange-500" href="#social">Social</a>
+                    <a class="transition hover:text-orange-500" href="#contact">Contact</a>
+                    <a href="call" class="bg-orange-500 px-5 py-3 rounded-full text-white transition hover:bg-slate-900">Call Me</a>
+            </nav>
+        </div>
+    </header>
+    <section class="min-h-[calc(100vh-6rem)]">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row">
+            <div class="p-10 mt-16">
+                <h1 class="font-bold text-start text-5xl max-w-3xl text-slate-900 mb-7">Rapidly build modern websites without ever leaving your HTML.</h1>
+                <p class="text-start mb-8 text-base">
+                    A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+                </p>
+                <a class="bg-orange-500 mt-10 px-5 py-3 rounded-full text-white transition hover:bg-slate-900" href="#">Get Started</a>
+            </div>
+            <img class="w-1/2" src="images/undraw_learning-sketchingsh.svg" alt="landing-img">
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <h1 class="text-center text-3xl md:text-5xl font-bold text-slate-900">
+                “Best practices” don’t actually work.
+            </h1>
+            <p class="max-w-5xl mx-auto text-center">
+                I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.
+            </p>
+            <div class="mt-16 w-full grid grid-cols-1 md:grid-cols-3 gap-x-5 md:gap-y-4">
+                <div class="flex flex-col justify-center text-center p-5 border-2 border-solid border-slate-100 bg-slate-100 hover:bg-white rounded-lg transition">
+                    <img class="-mt-12 mx-auto w-16 rounded-full" src="images/adam.jpg" alt="adam-img">
+                    <h3 class="text-xl my-2 font-bold text-slate-900">Adam Sandler</h3>
+                    <p class="text-slate-700 text-sm">
+                        The way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center text-center p-5 border-2 border-solid border-slate-100 bg-slate-100 hover:bg-white rounded-lg transition">
+                    <img class="-mt-16 mx-auto w-16 rounded-full" src="images/madeline.jpg" alt="adam-img">
+                    <h3 class="text-xl my-2 font-bold text-slate-900">Madeline Bauer</h3>
+                    <p class="text-slate-700 text-sm">
+                        I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center text-center p-5 border-2 border-solid border-slate-100 bg-slate-100 hover:bg-white rounded-lg transition">
+                    <img class="-mt-16 mx-auto w-16 rounded-full" src="images/marcel.jpg" alt="adam-img">
+                    <h3 class="text-xl my-2 font-bold text-slate-900">Marcel Khalifa</h3>
+                    <p class="text-slate-700 text-sm">
+                        I started using @tailwindcss. I instantly fell in love with their responsive modifiers, thorough documentation, and how easy it was customizing color palettes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-orange-500 mt-20">
+            <div class="container mx-auto flex justify-between items-center h-36 ">
+                <h1 class="text-4xl font-bold text-white">Move even faster with Tailwind UI.</h1>
+                <a class="p-3 text-orange-500 transition rounded-full bg-white text-base hover:bg-slate-900 hover:text-white" href="#">Start Here</a>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand Section -->
+                <div class="space-y-6">
+                    <img class="w-48" src="images/logo-dark.png" alt="Company Logo">
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                            <i class="text-2xl text-white hover:text-blue-600 transition-colors fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+                            <i class="text-2xl text-white hover:text-pink-500 transition-colors fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel">
+                            <i class="text-2xl text-white hover:text-red-600 transition-colors fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+                            <i class="text-2xl text-white hover:text-blue-400 transition-colors fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our X (Twitter) page">
+                            <i class="text-2xl text-white hover:text-gray-400 transition-colors fa-brands fa-square-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Navigation Links -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <nav class="flex flex-col space-y-2">
+                        <a class="text-gray-300 hover:text-orange-500 transition-colors" href="#">Home</a>
+                        <a class="text-gray-300 hover:text-orange-500 transition-colors" href="#about">About</a>
+                        <a class="text-gray-300 hover:text-orange-500 transition-colors" href="#contact">Contact</a>
+                    </nav>
+                </div>
+    
+                <!-- Legal Links -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <nav class="flex flex-col space-y-2">
+                        <a class="text-gray-300 hover:text-orange-500 transition-colors" href="#">Imprint</a>
+                        <a class="text-gray-300 hover:text-orange-500 transition-colors" href="#privacy">Privacy</a>
+                        <a class="text-gray-300 hover:text-orange-500 transition-colors" href="#credits">Credits</a>
+                    </nav>
+                </div>
+    
+                <!-- Newsletter Section -->
+                <div class="space-y-6">
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <form class="relative" onsubmit="event.preventDefault();">
+                        <label for="newsletter-email" class="sr-only">Subscribe to our newsletter</label>
+                        <input 
+                            id="newsletter-email"
+                            type="email" 
+                            class="w-full py-3 px-4 pr-24 rounded-full bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            placeholder="Enter your email"
+                            required
+                        >
+                        <button 
+                            type="submit"
+                            class="absolute right-1 top-1 px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="mt-12 pt-8 border-t border-gray-800  text-left md:text-center text-gray-400">
+                <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
